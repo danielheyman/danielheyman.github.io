@@ -6,6 +6,7 @@ body{
     margin-top: 20px;
     padding: 0;
     background: #fff;
+    line-height: 13pt;
 }
 
 .print
@@ -89,6 +90,7 @@ header.intro h1 {
     font-weight: normal;
     margin: 0;
     padding: 0;
+    line-height: initial;
 }
 
 header.intro h2 {
@@ -96,6 +98,7 @@ header.intro h2 {
     font-weight:normal;
     margin: 0;
     padding: 0;
+    line-height: initial;
 }
 
 header.intro .address {
@@ -168,4 +171,53 @@ section.section .block-flex:last-child {
 .footer {
     margin-top: 17px;
     text-align: center;
+}
+
+
+@media only screen and (max-width: 8.5in) {
+    .resume {
+        width: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 20px;
+    }
+    
+    header.intro .address {
+        float: none;
+    }
+    
+    header.intro .title {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    header.intro h2 {
+        font-size: 15px;
+    }
+    
+    section.section .container-flex {
+        display: block;
+    }
+    
+    .print {
+        width: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    header.intro .address-left {
+        margin-right: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    body {
+        font-size: 9pt;
+        line-height: 12pt;
+    }
+    
+    header.intro h2 {
+        font-size: 13px;
+    }
 }
