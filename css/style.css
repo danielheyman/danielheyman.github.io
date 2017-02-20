@@ -195,7 +195,7 @@ section.section .block-flex:last-child {
         font-size: 15px;
     }
     
-    section.section .container-flex {
+    section.section .container-flex, section.section .block-flex {
         display: block;
     }
     
