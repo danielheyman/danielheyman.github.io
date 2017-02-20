@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Daniel Heyman CV</title>
+		<style>
+			body{
+				font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+				color: #000;
+				font-size: 10pt;
+				margin:0;
+				margin-top:20px;
+				padding:0;
+				background-color:#FFFFFF;
+			}
+
+			.print
+			{
+				display: block;
+				margin:auto;
+				width:8.5in;
+				line-height:50pt;
+				text-align: center;
+				border:1px solid #ddd;
+				font-size:11pt;
+				margin-bottom:20px;
+				text-decoration: none;
+				color: #3ca446;
+
+				-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+				-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+				box-sizing: border-box;         /* Opera/IE 8+ */
+			}
+
+			.print:hover{
+				color: #454545;
+			}
+
+			.letter{
+				margin:auto;
+				width:8.5in;
+				padding: 0.5in;
+				height:11in;
+				border:1px solid #ddd;
+				line-height:15pt;
+				font-size:12pt;
+				text-align: justify;
+
+
+				-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+				-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+				box-sizing: border-box;         /* Opera/IE 8+ */
+			}
+
+			.letter p{
+				margin-bottom:15pt;
+				margin-top:0;
+			}
+
+			.resume{
+				margin:auto;
+				width:8.5in;
+				padding: 0.5in;
+				border:1px solid #ddd;
+				page-break-before: always;
+				margin-bottom:20px;
+				margin-top:20px;
+
+				-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+				-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+				box-sizing: border-box;         /* Opera/IE 8+ */
+			}
+
+			@media print
+			{
+				body{
+					margin-top:0;
+				}
+
+				.print{
+					display: none;
+				}
+				.resume, .letter
+				{
+					border:0;
+					margin:auto;
+					padding:0;
+					width:7.5in;
+					height:auto;
+					margin:0;
+				}
+			}
+
+			@page
+			{
+				margin: 0.5in;
+			}
+
+			td{
+				padding:0;
+			}
+
+			table.main{
+				page-break-inside:avoid;
+			}
+
+			h1{
+				font-weight:normal;
+				margin:0;
+				padding:0;
+			}
+			.space{
+				display: inline-block;
+				margin:0 5px;
+				color:#3ca446;
+			}
+
+			.space:after{
+				content: "...";
+				position: relative;
+				top:-4px;
+			}
+
+			.seperator{
+				margin:10px 0;
+
+			}
+
+			td.title{
+				font-size:12pt;
+				width:100px;
+				vertical-align: top;
+				padding-right:20px;
+				font-weight: bold;
+			}
+
+			td.date{
+				width:80px;
+				vertical-align: top;
+				padding-right:10px;
+				font-weight: bold;
+			}
+
+			.color{
+				display: inline-block;
+				color:#3ca446;
+				font-style:italic;
+			}
+
+			p{
+				margin: 0;
+				margin-top:5px;
+			}
+
+			.spacer{
+				height:5px;
+			}
+
+			table{
+				border:0;
+				padding: 0;
+				margin: 0;
+			}
+
+			.tabbed{
+				width: 490px;
+				display: inline-block;
+			}
+
+			table tr:nth-child(n+2) td:nth-child(2){
+				padding-top: 10px;
+			}
+
+			ul{
+				margin: 0;
+				margin-top: 1px;
+			}
+
+			li{
+				position: relative;
+				margin-left: -23px;
+			}
+
+			td{
+				padding: 0;
+				margin: 0;
+				border-spacing: 0;
+    				border-collapse: collapse;
+			}
+			td p:first-child {
+				margin-top: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<a href="cv_plain.pdf" class="print" target="_blank">Printable Version</a>
+
+		<div class="resume">
+			<center>
+				<h1>Daniel Heyman</h1>
+				<table style="width:100%;">
+					<tr style="width:100%;">
+						<td style="text-align:left; vertical-align:top;">
+							<strong>Campus Mailing Address:</strong><br>
+							Box S-1385, Castle Point Terrace<br>Hoboken, NJ 07030<br>
+							Cell: 201-470-4548<br>
+						</td>
+						<td style="text-align:right; vertical-align:top;">
+							<strong>Permanent Address:</strong><br>
+							49 Bowers Lane<br>Closter, NJ 07624<br>
+							dheyman@stevens.edu
+						</td>
+					</tr>
+				</table>
+
+			</center>
+
+			<div class="seperator"></div>
+
+			<!--<table class="main">
+				<tr>
+					<td class="title">
+						OBJECTIVE:
+					</td>
+					<td>
+						Build upon my passion as a software developer.
+					</td>
+				</tr>
+			</table>
+
+			<div class="seperator"></div>-->
+
+			<table>
+				<tr>
+					<td class="title">EDUCATION:</td>
+					<td>
+						<p><b>Stevens Institute of Technology</b>, Hoboken, New Jersey<br>
+						<span class="tabbed">Master's of Computer Science &amp; Bachelor's of Computer Science</span> Aug '14 - May '18</p>
+						<p>GPA: 4.0 (M.S.) &amp; 3.95 (B.S.); Honors: Dean's List, Scholar's Program</p>
+						<p>Master's Subjects: Intro to Text Mining &amp; Statistical Natural Language Processing, &amp; Agile Methods for Software Development<br>
+						Bachelor's Subjects: Database Management, Systems Programming, IT Security, Automata &amp; Computation, Comp. Org. &amp; Programming, Algorithms, Discrete Structures, Data Structures, Intro to Web Programming, Prob &amp; Stats, Calc 1 - 2, Diff Eq, Microeconomics, &amp; Project Management.</p>
+					</td>
+				</tr>
+			</table>
+
+			<div class="seperator"></div>
+
+			<table class="main">
+				<tr>
+					<td class="title">
+						SKILLS:
+					</td>
+					<td>
+						<p><b>Proficient in:</b> HTML5, JavaScript / jQuery, PHP, RoR, Laravel, MySQL, Bootstrap, Sass, REST, XML, JSON, MVC frameworks, and Git.</p>
+						<p><b>Experience with:</b> Vue.js, MongoDB, Python, Java, C++, Backbone.js, Node.js, Social media APIs, Load balancing, Wordpress, Nginx, Linux configurations for website environments.</p>
+						<p><b>Languages:</b> Hebrew (fluent)</p>
+						<!--<table class="main">
+							<tr>
+								<td class="date">Experience:</td>
+								<td>
+									Vue.js, MongoDB, Python, Java, C++, Backbone.js, Node.js, Social media APIs, Load balancing, Wordpress, Nginx, Linux configurations for website environments.
+								</td>
+							</tr>
+						</table>
+
+						<table class="main">
+							<tr>
+								<td class="date">Languages:</td>
+								<td>
+									Hebrew (fluent)
+								</td>
+							</tr>
+						</table>-->
+					</td>
+				</tr>
+			</table>
+
+			<div class="seperator"></div>
+
+			<table>
+				<tr>
+					<td class="title">WORK EXPERIENCE:</td>
+					<td>
+						<p>
+							<b>Thingee Corp</b>, Parsippany, NJ<br>
+							<span class="tabbed">Ruby on Rails &amp; Web Developer:</span>
+							May '15 - Present
+						</p>
+						<ul>
+							<li>Develop websites for pharmaceuticals and in-house products using a diverse set of languages, primarily consisting of Ruby on Rails, Node.JS, WordPress, PHP, MySQL, Backbone, and HTML5.</li>
+							<li>Lead, manage, and delegate tasks to the team for major client projects from the ground up.</li>
+							<li>Provide security, optimization, and other suggestions to the team and senior developer.</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<p>
+							<b>TechDime LLC</b>, Closter, NJ<br>
+							<span class="tabbed">Founder &amp; CTO:</span>
+							Aug '13 - Sep '14
+						</p>
+						<ul>
+							<li>Built websites throughout traffic-generating niches that use statistical data and interactive interfaces to enhance the user experience, primarily using MongoDB, HTML5, Vue.js, and Laravel.</li>
+							<li>Developed tools for tracking and analyzing user interactions to provide customized experiences tailored to their interests.</li>
+							<li>Accepted premium subscriptions and advertising as the main source of generating income.</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<p>
+							<b>Ericom Software Inc.</b>, Closter, NJ<br>
+							<span class="tabbed">HTML5 Software Architect &amp; Developer:</span>
+							Jul '12 - Jul '13
+						</p>
+						<ul>
+							<li>Developed interactive JavaScript / jQuery and HTML5 (including HTML5’s Canvas) software to provide different device types with dynamic and smooth transition layouts.</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<p>
+							<b>Tectrify LLC</b>, Closter, NJ<br>
+							<span class="tabbed">Founder &amp; CTO:</span>
+							Apr '09 - Aug '12
+						</p>
+						<ul>
+							<li>Built tools in the social media exchanges field to help individuals and companies promote themselves within social networks and movie portals.</li>
+							<li>Incorporated social media APIs and interfaces to build the core of the business.</li>
+							<li>Grew the business to a peak of over 100,000 active registered users and over 300,000 page views per day.</li>
+							<li>Sold usage licenses and premium subscriptions and used Google AdSense for generating revenue.</li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+
+			<div class="seperator"></div>
+
+			<table class="main">
+				<tr>
+					<td class="title">
+						ACTIVITIES:
+					</td>
+					<td>
+						Hillel Club, JCC Palisades Intern, Web Development Club, Mobile Apps Club, &amp; Cross Country.
+					</td>
+				</tr>
+			</table>
+
+			<div class="seperator"></div>
+
+			<table class="main">
+				<tr>
+					<td class="title">
+						INTERESTS:
+					</td>
+					<td>
+						Penny Stocks, Fitness, Nutrition, Minimalism, &amp; Cooking.
+					</td>
+				</tr>
+			</table>
+
+			<!--<div class="seperator"></div>
+
+			<table class="main">
+				<tr>
+					<td class="title">
+						REFERENCES:
+					</td>
+					<td>
+						Available upon request
+					</td>
+				</tr>
+			</table>-->
+
+			<br>
+			<center>
+				<p>US Citizen<br>Available to work: May - August 2017</p>
+			</center>
+
+		</div>
+	</body>
+</html>
