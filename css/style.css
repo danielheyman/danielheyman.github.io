@@ -175,10 +175,13 @@ section.section .block-flex:last-child {
 
 
 @media only screen and (max-width: 8.5in) {
-    .resume {
+    .resume, .print {
         width: auto;
         margin-left: 20px;
         margin-right: 20px;
+    }
+    
+    .resume {
         padding: 20px;
     }
     
@@ -199,10 +202,8 @@ section.section .block-flex:last-child {
         display: block;
     }
     
-    .print {
-        width: auto;
-        margin-left: 20px;
-        margin-right: 20px;
+    section.section .block-flex {
+        margin-right: 0;
     }
 
     header.intro .address-left {
