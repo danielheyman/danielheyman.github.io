@@ -1,6 +1,6 @@
-body{
+body {
     font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #000;
+    color: #111;
     font-size: 10pt;
     margin: 0;
     margin-top: 20px;
@@ -9,8 +9,7 @@ body{
     line-height: 13pt;
 }
 
-.print
-{
+.print {
     display: block;
     margin: auto;
     width: 8.5in;
@@ -22,17 +21,16 @@ body{
     text-decoration: none;
     color: #000;
     background: #eee;
-
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-.print:hover{
+.print:hover {
     background: #fff;
 }
 
-.resume{
+.resume {
     margin: auto;
     width: 8.5in;
     padding: 0.5in;
@@ -40,23 +38,19 @@ body{
     page-break-before: always;
     margin-bottom: 40px;
     margin-top: 20px;
-
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-@media print
-{
-    body{
+@media print {
+    body {
         margin-top: 0;
     }
-
-    .print{
+    .print {
         display: none;
     }
-    .resume
-    {
+    .resume {
         border: 0;
         margin: auto;
         padding: 0;
@@ -64,24 +58,26 @@ body{
         height: auto;
         margin: 0;
     }
+    .hide-print {
+        display: none;
+    }
 }
 
-@page
-{
+@page {
     margin: 0.5in;
 }
 
-p{
+p {
     margin: 0;
     margin-top: 5px;
 }
 
-ul{
+ul {
     margin: 0;
     margin-top: 1px;
 }
 
-li{
+li {
     position: relative;
     margin-left: -23px;
 }
@@ -95,7 +91,7 @@ header.intro h1 {
 
 header.intro h2 {
     font-size: 18px;
-    font-weight:normal;
+    font-weight: normal;
     margin: 0;
     padding: 0;
     line-height: initial;
@@ -105,7 +101,7 @@ header.intro .address {
     float: right;
 }
 
-header.intro .address > div {
+header.intro .address>div {
     display: inline-block;
 }
 
@@ -137,15 +133,24 @@ section.section .title {
 
 section.section .block .date {
     float: right;
+    margin-left: 20px;
 }
+
+section.section .block .quote {
+    border-left: 1px solid #ccc;
+    padding-left: 5px;
+}
+
 section.section .container-flex {
     display: flex;
 }
+
 section.section .block-flex {
     display: inline-block;
     vertical-align: top;
     margin-right: 15px;
 }
+
 section.section .block-flex:last-child {
     margin-right: 0;
 }
@@ -173,51 +178,41 @@ section.section .block-flex:last-child {
     text-align: center;
 }
 
-
 @media only screen and (max-width: 8.5in) {
     .resume, .print {
         width: auto;
         margin-left: 20px;
         margin-right: 20px;
     }
-    
     .resume {
         padding: 20px;
     }
-    
     header.intro .address {
         float: none;
     }
-    
     header.intro .title {
         width: 100%;
         margin-bottom: 20px;
     }
-    
     header.intro h2 {
         font-size: 15px;
     }
-    
     section.section .container-flex, section.section .block-flex {
         display: block;
     }
-    
     section.section .block-flex {
         margin-right: 0;
     }
-
     header.intro .address-left {
         margin-right: 20px;
     }
 }
-
 
 @media only screen and (max-width: 500px) {
     body {
         font-size: 9pt;
         line-height: 12pt;
     }
-    
     header.intro h2 {
         font-size: 13px;
     }
