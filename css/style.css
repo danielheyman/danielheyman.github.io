@@ -141,17 +141,18 @@ section.section .block .quote {
     padding-left: 10px;
 }
 
-section.section .container-flex {
+.container-flex {
     display: flex;
 }
 
-section.section .block-flex {
+.block-flex {
     display: inline-block;
     vertical-align: top;
     margin-right: 15px;
+    flex-grow: 1;
 }
 
-section.section .block-flex:last-child {
+.block-flex:last-child {
     margin-right: 0;
 }
 
@@ -174,8 +175,11 @@ section.section .block-flex:last-child {
 }
 
 .footer {
-    margin-top: 17px;
-    text-align: center;
+    margin-top: 20px;
+}
+
+.footer .right {
+    text-align: right;
 }
 
 @media only screen and (max-width: 8.5in) {
@@ -197,14 +201,17 @@ section.section .block-flex:last-child {
     header.intro h2 {
         font-size: 15px;
     }
-    section.section .container-flex, section.section .block-flex {
+    .container-flex, .block-flex {
         display: block;
     }
-    section.section .block-flex {
+    .block-flex {
         margin-right: 0;
     }
     header.intro .address-left {
         margin-right: 20px;
+    }
+    .footer .right {
+        text-align: left;
     }
 }
 
