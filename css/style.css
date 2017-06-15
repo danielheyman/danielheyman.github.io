@@ -44,27 +44,6 @@ body {
     background: url('../texture.png');
 }
 
-@media print {
-    body {
-        margin-top: 0;
-    }
-    .print {
-        display: none;
-    }
-    .resume {
-        border: 0;
-        margin: auto;
-        padding: 0;
-        width: 7.7in;
-        height: auto;
-        margin: 0;
-        background: #fff;
-    }
-    .hide-print {
-        display: none;
-    }
-}
-
 @page {
     margin: 0.4in;
 }
@@ -172,6 +151,16 @@ section.section .block .quote {
     white-space: nowrap;
 }
 
+.tags .group {
+    border-width: 0;
+    background: transparent;
+    border-bottom: 1px dashed #ccc;
+}
+
+.tags .group::after {
+    content: ":";
+}
+
 .important {
     border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
@@ -224,5 +213,30 @@ section.section .block .quote {
     }
     header.intro h2 {
         font-size: 13px;
+    }
+}
+
+@media print {
+    body {
+        margin-top: 0;
+        line-height: 12pt;
+    }
+    section.section .title {
+        margin-top: 17px;
+    }
+    .print {
+        display: none;
+    }
+    .resume {
+        border: 0;
+        margin: auto;
+        padding: 0;
+        width: 7.7in;
+        height: auto;
+        margin: 0;
+        background: #fff;
+    }
+    .hide-print {
+        display: none;
     }
 }
