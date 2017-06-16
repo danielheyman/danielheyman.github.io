@@ -218,10 +218,9 @@ section.section .block .quote {
 @media print {
     body {
         margin-top: 0;
-        line-height: 12pt;
     }
     section.section .title {
-        margin-top: 17px;
+        margin-top: 13px;
     }
     .print {
         display: none;
