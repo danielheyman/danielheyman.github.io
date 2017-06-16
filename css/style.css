@@ -152,9 +152,8 @@ section.section .block .quote {
 }
 
 .tags .group {
-    border-width: 0;
     background: transparent;
-    border-bottom: 1px dashed #ccc;
+    border: 1px dashed #ccc;
 }
 
 .tags .group::after {
