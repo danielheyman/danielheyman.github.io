@@ -206,21 +206,22 @@ section.section .block .quote {
 }
 
 @media only screen and (max-width: 500px) {
-    body {
+    /* body {
         font-size: 9pt;
         line-height: 12pt;
-    }
+    } */
     header.intro h2 {
-        font-size: 13px;
+        font-size: 9pt;
     }
 }
 
 @media print {
     body {
         margin-top: 0;
+        line-height: 12.7pt;
     }
     section.section .title {
-        margin-top: 18px;
+        margin-top: 15px;
     }
     .print {
         display: none;
