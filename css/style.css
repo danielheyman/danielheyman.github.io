@@ -218,7 +218,7 @@ section.section .block .quote {
 @media print {
     body {
         margin-top: 0;
-        line-height: 12pt;
+        /* line-height: 12pt; */
     }
     section.section .title {
         margin-top: 12px;
