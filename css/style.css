@@ -32,15 +32,12 @@ body {
 
 .resume {
     margin: auto;
-    width: 8.5in;
+    width: 7.6in;
     padding: 0.4in;
     border: 1px solid #ddd;
     page-break-before: always;
     margin-bottom: 40px;
     margin-top: 20px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
     background: url('../texture.png');
 }
 
@@ -153,7 +150,7 @@ section.section .block .quote {
 
 .tags .group {
     background: transparent;
-    border: 1px dashed #ccc;
+    border: 0px;
 }
 
 .tags .group::after {
@@ -162,6 +159,7 @@ section.section .block .quote {
 
 .important {
     border-bottom: 1px solid rgba(0, 0, 0, .1);
+    font-style: italic;
 }
 
 .footer {
@@ -186,7 +184,6 @@ section.section .block .quote {
     }
     header.intro .title {
         width: 100%;
-        margin-bottom: 20px;
     }
     header.intro h2 {
         font-size: 15px;
@@ -206,10 +203,6 @@ section.section .block .quote {
 }
 
 @media only screen and (max-width: 500px) {
-    /* body {
-        font-size: 9pt;
-        line-height: 12pt;
-    } */
     header.intro h2 {
         font-size: 9pt;
     }
@@ -218,10 +211,6 @@ section.section .block .quote {
 @media print {
     body {
         margin-top: 0;
-        /* line-height: 12pt; */
-    }
-    section.section .title {
-        margin-top: 12px;
     }
     .print {
         display: none;
@@ -230,8 +219,6 @@ section.section .block .quote {
         border: 0;
         margin: auto;
         padding: 0;
-        width: 7.7in;
-        height: auto;
         margin: 0;
         background: #fff;
     }
